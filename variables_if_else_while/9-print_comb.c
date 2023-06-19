@@ -12,14 +12,14 @@
 */
 int main(void)
 {
-char  nu;
-char comma = ',';
-char escape = ' ';
+int  nu;
+int comma = ',';
+int escape = ' ';
 for (nu = '0'; nu <= '9'; nu++)
 {
 putchar(nu);
-putchar(escape);
 putchar(comma);
+putchar(escape);
 }
 putchar('\n');
 return (0);
