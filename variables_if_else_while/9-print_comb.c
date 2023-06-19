@@ -18,8 +18,8 @@ int escape = ' ';
 for (nu = '0'; nu <= '9'; nu++)
 {
 putchar(nu);
-putchar(comma);
 putchar(escape);
+putchar(comma);
 }
 putchar('\n');
 return (0);
