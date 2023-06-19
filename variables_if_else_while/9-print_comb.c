@@ -19,7 +19,7 @@ for (nu = '0'; nu <= '9'; nu++)
 {
 if (nu == '9')
 {
-comma = ' ';
+break;
 }
 putchar(nu);
 putchar(comma);
