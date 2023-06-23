@@ -4,9 +4,9 @@ OBJ = ./*.o
 NAME = school
 
 main.o : main.c
-	$(CC) -c -o $(OBJ) $(SRC)
+	$(CC) -c -o $(SRC) $(OBJ)
 school.o : school.c
-	$(CC) -c -o $(OBJ) $(SRC)
+	$(CC) -c -o $(SRC) $(OBJ)
 
 
 all :
