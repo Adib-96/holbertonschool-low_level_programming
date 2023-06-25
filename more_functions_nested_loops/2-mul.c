@@ -1,7 +1,14 @@
 #include "main.h"
 
 
-int mul (int a, int b)
+/**
+ * mul - program that multiple two interger.
+ *@a : integer to be multiplied.
+ *@b : integer to be multiplied.
+ * Return: a*b.
+*/
+
+int mul(int a, int b)
 {
 return (a * b);
 }
