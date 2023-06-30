@@ -13,9 +13,10 @@ while (i < n)
 if (n - i == 1)
 {
 printf("%d", a[i]);
+printf("%c",'\n');
 break;
 }
-printf("%d", a[i]);
+printf("%d, ", a[i]);
 i++;
 }
 }
