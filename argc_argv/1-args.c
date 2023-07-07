@@ -7,7 +7,7 @@
  *Return:0
 */
 int main (int argc, char __attribute__((__unused__)) *argv[]) {
-    printf("%d",argc);
-    return (0);
-    
+if(argc > 1)
+	printf("%d",argc);
+return (0);    
 }
