@@ -28,9 +28,7 @@ if (dup == NULL)
 {
 return (NULL);
 }
-for (i = 0; i != '\0'; i++)
-{
-dup[i] = str[i];
-}
+while ((dup[i] = str[i]) != '\0')
+	i++;
 return (dup);
 }
