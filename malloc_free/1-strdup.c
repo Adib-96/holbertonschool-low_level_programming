@@ -9,25 +9,28 @@
  * Return: pointer to the copied string (Success), NULL (Error)
  */
 
-char *_strdup(char *str) 
+char *_strdup(char *str)
 {
 char *dup;
 int len, i;
 len = 0;
 i = 0;
 if (str == NULL)
-    return (NULL);
-
+{
+return (NULL);
+}
 while (str[len])
-    len++;
+{
+len++;
+}
 dup = malloc(sizeof(char) * (len + 1));
 if (dup == NULL)
 {
-    return (NULL);
+return (NULL);
 }
 for (i = 0; i != '\0'; i++)
 {
-    dup[i] = str[i];
+dup[i] = str[i];
 }
 return (dup);
 }
