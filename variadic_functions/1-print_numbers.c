@@ -14,12 +14,11 @@ unsigned int i;
 va_start(ptr, n);
 for (i = 0; i < n - 1; i++)
 {
-printf("%d ", va_arg(ptr, int));
 if (separator == NULL)
 {
 continue;
 }
-putchar(*(separator));
+printf("%d%c ", va_arg(ptr, int),*(separator));
 }
 printf("%d", va_arg(ptr, int));
 putchar('\n');
