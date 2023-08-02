@@ -1,15 +1,24 @@
 #include "lists.h"
-#include <stdio.h>
-#include <string.h>
+/**
+ * print_list - program that display data
+ * @h: pointer the a node
+ *
+ * Return: number of node created
+ */
+
 size_t print_list(const list_t *h)
 {
-int count = 1;
-if (h->str == NULL)
+size_t count = 0;
+while (h)
 {
-	printf("[0] (nil)");
-}
+if (!h->str)
+printf("[0] (nil)\n");
+else
 {
-	printf("[%ld] %s",strlen(h->str),h->str);
+printf("[%u] %s\n", h->len, h->str);
 }
-return count;
+h = h->next;
+count++;
+}
+return (count);
 }
