@@ -9,7 +9,7 @@
  * Return: address of the new element, or NULL if it failed
  */
 
-list_t *add_node_end(list_t **head, const char *str) 
+list_t *add_node_end(list_t **head, const char *str)
 {
 unsigned int len = 0;
 list_t *temp = *head;
@@ -35,7 +35,8 @@ return (newNode);
 }
 while (temp->next)
 {
-temp->next = newNode;
+temp = temp->next;
 }
+temp->next = newNode;
 return (newNode);
 }
