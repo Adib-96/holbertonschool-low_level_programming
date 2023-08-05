@@ -1,2 +1,1 @@
-Doubly_linked lists
-doubly linked list README
+Doubly linked list README
