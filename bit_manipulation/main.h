@@ -1,6 +1,6 @@
 #ifndef HEADER_F
 #define HEADER_F
-
+#include <string.h>
 
 
 unsigned int binary_to_uint(const char *b);
